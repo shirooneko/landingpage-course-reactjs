@@ -9,8 +9,10 @@ export const Kelas = () => {
         <Container>
           <Row>
             <Col>
-              <h1 className="fw-bold text-center">Semua Kelas</h1>
-              <p className="text-center">
+              <h1 className="fw-bold text-center" data-aos="fade-up"
+                data-aos-duration="900">Semua Kelas</h1>
+              <p className="text-center" data-aos="fade-up"
+                data-aos-duration="800">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               </p>
             </Col>
@@ -18,7 +20,8 @@ export const Kelas = () => {
           <Row>
           {semuaKelas.map((kelas) => {
               return (
-                <Col key={kelas.id} className="shadow rounded-4">
+                <Col key={kelas.id} className="shadow rounded-4" data-aos="fade-up"
+                data-aos-duration="1000" >
                   <img
                     src={kelas.image}
                     alt=""
